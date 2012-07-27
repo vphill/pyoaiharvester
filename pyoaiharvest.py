@@ -124,19 +124,4 @@ if __name__ == "__main__":
     print "\nRead %d bytes (%.2f compression)"%(nDataBytes, float(nDataBytes)/nRawBytes)
     
     print "Wrote out %d records"%recordCount
-    
-
-## Copyright (c) 2000-2003 OCLC Online Computer Library Center, Inc. and other contributors.
-## All rights reserved.  The contents of this file, as updated from time to time by the OCLC
-## Office of Research are subject to OCLC Research Public License Version 2.0 (the
-## "License"); you may not use this file except in compliance with the License.  You may
-## obtain a current copy of the License at http://purl.oclc.org/oclc/research/ORPL/.
-## Software distributed under the License is distributed on an "AS IS" basis, WITHOUT
-## WARRANTY OF ANY KIND, either express or implied.  See the License for the specific
-## language governing rights and limitations under the License.  This software consists of
-## voluntary contributions made by many individuals on behalf of OCLC Research.  For more
-## information on OCLC Research, please see http://www.oclc.org/research/.  This is the
-## Original Code.  The Initial Developer of the Original Code is Thomas Hickey
-## (mailto:hickey@oclc.org). Portions created by OCLC are Copyright (C) 2003.  All Rights
-## Reserved. 2003 July 31a
 
