@@ -81,7 +81,7 @@ if __name__ == "__main__":
     else:
         print usage
 
-    if serverString.find('http://') != 0:
+    if serverString.find('http://') != 0 or serverString.find('https://') != 0:
         serverString = 'http://' + serverString
 
     print "Writing records to %s from archive %s" % (outFileName, serverString)
