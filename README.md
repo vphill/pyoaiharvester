@@ -26,7 +26,7 @@ Options
 &nbsp;&nbsp;&nbsp;&nbsp; harvest records from this date, format: yyyy-mm-dd  
 
 **-l**  
-**_--link_**  
+**--link**  
 &nbsp;&nbsp;&nbsp;&nbsp; URL of repository  
 
 **-m**  
