@@ -6,7 +6,7 @@ import re
 import xml.dom.pulldom
 import operator
 import codecs
-from optparse import OptionParser
+import argparse
 
 nDataBytes, nRawBytes, nRecoveries, maxRecoveries = 0, 0, 0, 3
 
@@ -49,16 +49,16 @@ def getFile(serverString, command, verbose=1, sleepTime=0):
 
 if __name__ == "__main__":
 
-    parser = OptionParser()
+    parser = argparse.ArgumentParser()
 
-    parser.add_option("-l", "--link", dest="link", help="URL of repository")
-    parser.add_option("-o", "--filename", dest="filename", help="write repository to file")
-    parser.add_option("-f", "--from", dest="fromDate", help="harvest records from this date yyyy-mm-dd")
-    parser.add_option("-u", "--until", dest="until", help="harvest records until this date yyyy-mm-dd")
-    parser.add_option("-m", "--mdprefix", dest="mdprefix", default="oai_dc", help="use the specified metadata format")
-    parser.add_option("-s", "--setName", dest="setName", help="harvest the specified set")
+    parser.add_argument("-l", "--link", dest="link", help="URL of repository")
+    parser.add_argument("-o", "--filename", dest="filename", help="write repository to file")
+    parser.add_argument("-f", "--from", dest="fromDate", help="harvest records from this date yyyy-mm-dd")
+    parser.add_argument("-u", "--until", dest="until", help="harvest records until this date yyyy-mm-dd")
+    parser.add_argument("-m", "--mdprefix", dest="mdprefix", default="oai_dc", help="use the specified metadata format")
+    parser.add_argument("-s", "--setName", dest="setName", help="harvest the specified set")
 
-    (options, args) = parser.parse_args()
+    options = parser.parse_args()
 
     if options.link is None or options.filename is None:
         parser.print_help()
